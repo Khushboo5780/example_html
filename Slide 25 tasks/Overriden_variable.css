@@ -1,0 +1,12 @@
+:root {
+    --blue: #6495ed;
+    --white: #ffffff;
+    --orange:#d49d66;
+  }
+  
+  body { background-color: var(--blue);} 
+    p {
+        --blue: #0000ff; /* local variable will override global */
+        color: var(--blue);
+    }
+    

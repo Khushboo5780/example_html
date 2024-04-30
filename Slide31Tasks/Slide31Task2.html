@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grid Layout with Articles</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto; /* Define two rows */
+      grid-gap: 5px;
+      padding: 20px;
+      max-width: 800px;
+    }
+
+    article {
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    /* Set the placement of specific articles */
+    article:nth-child(1),
+    article:nth-child(3) {
+      grid-column: 1 / span 3; /* Make first and last articles span all columns */
+    }
+
+    article:nth-child(2) {
+      grid-column: 1 / span 2; /* Make middle article span first two columns */
+      grid-row: 1; /* Place middle article in the first row */
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h2>Article 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam eu dui cursus placerat.</p>
+    </article>
+    <article>
+      <h2>Article 2</h2>
+      <p>Phasellus aliquet euismod est, vel consequat leo tempor in. Sed vel eros at sapien molestie cursus.</p>
+    </article>
+    <article>
+      <h2>Article 3</h2>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque tincidunt augue at eros fringilla, et egestas lectus ultrices.</p>
+    </article>
+  </main>
+</body>
+</html>

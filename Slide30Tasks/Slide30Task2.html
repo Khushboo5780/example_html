@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Center Image with Flexbox and Grid</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+     
+    }
+
+    main {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      max-width: auto;
+    }
+
+    article {
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h2>Article 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam eu dui cursus placerat.</p>
+    </article>
+    <article>
+      <h2>Article 2</h2>
+      <p>Phasellus aliquet euismod est, vel consequat leo tempor in. Sed vel eros at sapien molestie cursus.</p>
+    </article>
+    <article>
+      <h2>Article 3</h2>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque tincidunt augue at eros fringilla, et egestas lectus ultrices.</p>
+    </article>
+  </main>
+</body>
+</html>

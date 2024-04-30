@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Specificity</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+
+/* 1. Applying styles using the ID selector */
+#specificityParagraph {
+    color: red; /* Red color */
+}
+
+/* 2. Applying styles using the class selector */
+.paragraph {
+    color: blue; /* Blue color */
+}
+
+/* 3. Applying styles using the element selector */
+p {
+    color: green; /* Green color */
+}
+  </style>
+</head>
+<body>
+
+    <p id="specificityParagraph" class="paragraph">This is a paragraph.Sometimes when you add multiple classes to your element you want one of them to be applied and the other ones to be overridden. So you must understand the specificity of each type so that you achieve what you want to do. The least specificity is the styles you give to the elements directly(ex: p, body, div, etc.,) and next is classes(.blue, .red etc) and the class which is at the bottom or last in the stylesheet will be applied, and next is IDs (Ex: #green, #pink etc.,) and above the IDs are inline styling and most above all is the keyword “!important” which should be used after every property line. Explore on specificity for more understanding
+    </p>
+
+</body>
+</html>

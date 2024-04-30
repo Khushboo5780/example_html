@@ -1,0 +1,19 @@
+@media screen and (min-width: 390px) {
+    p{
+        font-size: 12px;
+    }
+
+@media screen and (min-width: 768px) {
+        p{
+            font-size: 24px;
+        }
+
+@media screen and (min-width: 991px) {
+            p{
+                font-size: 12px;
+            }
+
+
+img{
+    width:40vw;
+}
